@@ -33,11 +33,11 @@ body {
   animation: bounce 1s;
 } */
 
-/* ----------showing button----------- */
+/* ----------hiding button----------- */
 
 .header-container, 
 .header-container div,
-.showing-button {
+.hiding-button {
   display: flex;
   align-items: center;
 }
@@ -46,7 +46,7 @@ body {
   padding-left: 3%;
 }
 
-.showing-button {
+.hiding-button {
   position: absolute;
   height: 15px;
   background-color: transparent;
@@ -55,7 +55,7 @@ body {
   border-radius: 4px;
 }
 
-.showing-button i {
+.hiding-button i {
   margin: auto;
 }
 
