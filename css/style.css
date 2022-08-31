@@ -1,0 +1,274 @@
+* {
+  box-sizing:border-box
+}
+
+body {
+  background-color: #f5f7fa;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+
+/* ========= left side of the resume ========= */
+
+.left-side {
+  width: 370px;
+  background-color: #26284b;
+  color: #fff;
+}
+
+.photo {
+  width: 370px;
+}
+
+/* deactivated link in html head */
+/* .photo:hover {
+  animation: bounce 1s;
+} */
+
+/* ----------showing button----------- */
+
+.header-container, 
+.header-container div,
+.showing-button {
+  display: flex;
+  align-items: center;
+}
+
+.header-container div {
+  padding-left: 3%;
+}
+
+.showing-button {
+  position: absolute;
+  height: 15px;
+  background-color: transparent;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+.showing-button i {
+  margin: auto;
+}
+
+
+.photo,
+.contacts,
+.skills {
+  margin-bottom: 10px;
+}
+
+.contacts,
+.skills,
+.activities,
+.interests {
+  padding-left: 20px;
+}
+
+.contacts-title,
+.skills-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contacts-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+
+}
+
+.contacts-link {
+  padding-left: 14px;
+  opacity: 0.6;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.skills {
+  padding-top: 5px;
+  padding-bottom: 5px; 
+  color: white; 
+}
+
+.skills-title {
+  font-size: 22px;
+  line-height: 1.091;
+}
+
+.skills-name{
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.skills-container, .skill {
+  height: 1.3rem;
+}
+
+.skills-container {
+  width: 90%;
+  background-color: #ddd; 
+  border-radius: 4px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.skill.html {width: 40%; background-color: #2196F3;} 
+.skill.css {width: 40%; background-color: #2196F3;} 
+.skill.js {width: 35%; background-color: #2196F3;} 
+.skill.git {width: 40%; background-color: #2196F3;} 
+.skill.eng {width: 70%; background-color: #2196F3;}
+.skill.scrum {width: 50%; background-color: #2196F3;}
+.skill.kanban {width: 80%; background-color: #2196F3;}
+.skill.attention {width: 80%; background-color: #2196F3;}
+.skill.communication {width: 80%; background-color: #2196F3;}
+
+.skill p {
+  margin: 0;
+  padding-left: 3%;
+  font-size: 0.9rem;
+}
+
+.activities-list,
+.interests-list {
+  padding-left: 20px;
+  width: 90%;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.activities-list li, .interests-list li {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  min-height: 60px;
+}
+
+.widget-link {
+  padding-top: 20px;
+  padding-right: 43px;
+  padding-bottom: 20px;
+  padding-left: 43px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  background-color: #2196F3;
+  box-shadow: 0px 8px 8px 0px #4ea5ec;
+}
+
+.widget-link:hover {
+  box-shadow: 0px 8px 23px 0px #4ea5ec;
+}
+
+.widget:hover {
+  animation: pulse 1s;
+}
+
+/* ========= right side of the resume ========= */
+
+.right-side {
+  width: 830px;
+  padding-left: 80px;
+  padding-right: 100px;
+  padding-bottom: 68px;
+}
+
+.bio,
+.jobs,
+.education {
+  margin-bottom: 50px;
+}
+
+
+.bio-title {
+  padding: 0;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.bio-occupation {
+  margin-bottom: 27px;
+}
+
+.bio-title {
+  color: #26284b;
+}
+
+.bio-occupation,
+.bio-about {
+  color: #26284b;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.714;
+}
+
+.jobs-title,
+.education-title {
+  color: #26284b;
+  font-size: 22px;
+  line-height: 1.091;
+  border-bottom: 2px solid #26284b;
+}
+
+.jobs-occupation,
+.education-degree {
+  color: #26284b;
+  font-size: 16px;
+  /* line-height: 1.5; */
+}
+
+.jobs-time,
+.education-time {
+  color: #828282;
+  font-size: 12px;
+  /* line-height: 2; */
+}
+
+.experience-item {
+  color: #595959;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.accent {
+  color: #2196F3;
+}
+
