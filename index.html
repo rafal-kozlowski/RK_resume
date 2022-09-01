@@ -15,9 +15,12 @@
   </head>
   <body>
     <div class="container">
-      <aside class="left-side">
+      <!-------------------- left side of the resume -------------------->
+            <aside class="left-side">
         <img src="./assets/_DSC9314b -PL.jpg" alt="photo Rafal Kozlowski" class="photo"/>
+        
         <section class="contacts">
+
           <div class="header-container">
             <h2 class="contacts-title">Contacts</h2>
             <div>
@@ -29,6 +32,7 @@
               </button>
             </div>
           </div>
+
           <ul class="contacts-list" id="contact-content">
             <li class="contacts-item">
               <i class='fas fa-mobile-alt' style='font-size:24px;color:white'></i>
@@ -40,7 +44,9 @@
             </li>
           </ul>
         </section>
+
         <section class="skills">
+
           <div class="header-container">
           <h2 class="skills-title">Software & Languages</h2>
             <div>
@@ -79,35 +85,48 @@
             </div>
           </div>
         </section>
-        <section class="skills">
-          <h2 class="skills-title">Soft Skills</h2>
 
-          <p class="skills-name">Scrum</p>
-          <div class="skills-container">
-            <div class="skill scrum"><p>50%</p></div>
-          </div>
-          
-          <p class="skills-name">Kanban</p>
-          <div class="skills-container">
-            <div class="skill kanban"><p>80%</p></div>
-          </div>
-          
-          <p class="skills-name">Attention to details</p>
-          <div class="skills-container">
-            <div class="skill attention"><p>80%</p></div>
-          </div>
-          
-          <p class="skills-name">Communication</p>
-          <div class="skills-container">
-            <div class="skill communication"><p>80%</p></div>
+        <section class="skills">
+
+          <div class="header-container">
+            <h2 class="skills-title">Soft Skills</h2>
+            <div>
+                <button class="hiding-button" id="soft-skill-show">
+                  <i class='fas fa-caret-down' style='font-size:12px;color:white'></i>
+                </button>
+                <button class="hiding-button" id="soft-skill-hide">
+                  <i class='fas fa-caret-up' style='font-size:12px;color:white'></i>
+                </button>
+              </div>
+            </div>
+
+          <div id="soft-skill-content"> 
+            <p class="skills-name">Scrum</p>
+            <div class="skills-container">
+              <div class="skill scrum"><p>50%</p></div>
+            </div>
+            
+            <p class="skills-name">Kanban</p>
+            <div class="skills-container">
+              <div class="skill kanban"><p>80%</p></div>
+            </div>
+            
+            <p class="skills-name">Attention to details</p>
+            <div class="skills-container">
+              <div class="skill attention"><p>80%</p></div>
+            </div>
+            
+            <p class="skills-name">Communication</p>
+            <div class="skills-container">
+              <div class="skill communication"><p>80%</p></div>
+            </div>
           </div>
         </section>
+
         <section class="activities">
           <h2 class="activities-title">Relevant activities</h2>
           <ul class="activities-list">
-            <li>CODECADEMY - Front-End Engineer course</li>
-            <li>GOIT 6-day marathon - basics of HTML and CSS</li>
-            <li>UDEMY 'Git and GitHub from scratch course</li>
+
             <li>PRINCE2 Foundation - accredited course with exam on foundation grade </li>
             <li>Implementing Kanban methodology for project management team  in OPG Property Professionals</li>
             <li>Implementing advanced MS Outlook task functions for project management team in OPG Property Professionals</li>
@@ -128,6 +147,8 @@
         </section>
       </aside>
 
+      <!--------------- right side of the resume --------------->
+
       <div class="right-side">
         <section class="bio">
           <h1 class="bio-title">Rafał Kozłowski</h1>
@@ -139,13 +160,52 @@
           </p>
         </section>
 
+        <section class="education">
+          <h2 class="education-title">Education and courses</h2>
+
+          <h3 class="education-degree">
+            Front-End Engineer, <span class="accent">Codecademy / Online course</span>
+          </h3>
+          <p class="education-time">ongoing</p>
+
+          <h3 class="education-degree">
+            Git and GitHub from scratch, <span class="accent">UDEMY / Online course</span>
+          </h3>
+          <p class="education-time">2022</p>
+
+          <h3 class="education-degree">
+            Basics of HTML and CSS, <span class="accent">GoIT / 6-day online marathon</span>
+          </h3>
+          <p class="education-time">2021</p>
+
+          <h3 class="education-degree">
+            Front-End Developer, <span class="accent">Software Development Academy / Online course</span>
+          </h3>
+          <p class="education-time">2020</p>
+
+          <h3 class="education-degree">
+            Project management, <span class="accent">Technical University of Lodz / Postgraduate studies</span>
+          </h3>
+          <p class="education-time">2018 - 2019</p>
+
+          <h3 class="education-degree">
+            Civil engineering, <span class="accent">Technical University of Lodz / Master's degree</span>
+          </h3>
+          <p class="education-time">2013 - 2016</p>
+
+          <h3 class="education-degree">
+            Civil engineering, <span class="accent">Technical University of Lodz / Bachelor's degree</span>
+          </h3>
+          <p class="education-time">2009 - 2013</p>
+        </section>
+
         <section class="jobs">
           <h2 class="jobs-title">Employment history</h2>
 
           <h3 class="jobs-occupation">
             Co-owner at <span class="accent">P.W. RED s.c.</span>
           </h3>
-          <p class="jobs-time">January 2020 - up to now</p>
+          <p class="jobs-time">2020 - up to now</p>
           <ul class="experience">
             <li class="experience-item">Execution of ventilation and gas installation audits </li>
             <li class="experience-item">Preparing offers and formal documentation</li>
@@ -155,7 +215,7 @@
           <h3 class="jobs-occupation">
             Senior Project Manager at <span class="accent">OPG Property Professionals</span>
           </h3>
-          <p class="jobs-time">January 2018 - December 2020</p>
+          <p class="jobs-time">2018 - 2020</p>
           <ul class="experience">
             <li class="experience-item">Project Management Team coordination</li>
             <li class="experience-item">Coordination of design and realization stage of property investments </li>
@@ -168,7 +228,7 @@
           <h3 class="jobs-occupation">
             Investor Supervision Inspector at <span class="accent">University of Lodz</span>
           </h3>
-          <p class="jobs-time">May 2017 - November 2017</p>
+          <p class="jobs-time">2017</p>
           <ul class="experience">
             <li class="experience-item">Investments' budget creation </li>
             <li class="experience-item">Coordination of design stage of property investments </li>
@@ -178,7 +238,7 @@
           <h3 class="jobs-occupation">
             Cost Estimator/ Site engineer at <span class="accent">Joka Sp. z o.o.</span>
           </h3>
-          <p class="jobs-time">September 2015 - April 2017</p>
+          <p class="jobs-time">2015 - 2017</p>
           <ul class="experience">
             <li class="experience-item">Creation of construction cost estimate </li>
             <li class="experience-item">Contact and negotiations with investors and contractors</li>
@@ -187,7 +247,7 @@
           <h3 class="jobs-occupation">
             Site engineer at <span class="accent">SKANSKA S.A.</span>
           </h3>
-          <p class="jobs-time">June 2014 - September 2015</p>
+          <p class="jobs-time">2014 - 2015</p>
           <ul class="experience">
             <li class="experience-item">Controlling concrete and ground works </li>
             <li class="experience-item">Reporting to Site Manager </li>
@@ -195,29 +255,7 @@
           </ul>
         </section>
 
-        <section class="education">
-          <h2 class="education-title">Education</h2>
-
-          <h3 class="education-degree">
-            Front-End Developer, <span class="accent">Software Development Academy / Online course</span>
-          </h3>
-          <p class="education-time">May 2020 - October 2020</p>
-
-          <h3 class="education-degree">
-            Project management, <span class="accent">Technical University of Lodz / Postgraduate studies</span>
-          </h3>
-          <p class="education-time">March 2018 - February 2019</p>
-
-          <h3 class="education-degree">
-            Civil engineering, <span class="accent">Technical University of Lodz / Master's degree</span>
-          </h3>
-          <p class="education-time">March 2013 - January 2016</p>
-
-          <h3 class="education-degree">
-            Civil engineering, <span class="accent">Technical University of Lodz / Bachelor's degree</span>
-          </h3>
-          <p class="education-time">October 2009 - February 2013</p>
-        </section>
+        
       </div>
     </div>
 

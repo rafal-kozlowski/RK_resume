@@ -43,3 +43,28 @@ const showSoftwareSkillContent = () => {
 };
 
 softwareSkillShow.onclick = showSoftwareSkillContent;
+
+//========== soft skill hiding button ==========//
+
+let softSkillShow = document.getElementById('soft-skill-show');
+let softSkillHide = document.getElementById('soft-skill-hide');
+let softSkillContent = document.getElementById('soft-skill-content');
+
+softSkillShow.style.display = 'none';
+
+const hideSoftSkillContent = () => {
+    softSkillContent.style.display ='none';
+    softSkillHide.style.display = 'none';
+    softSkillShow.style.display = '';
+};
+
+softSkillHide.onclick = hideSoftSkillContent;
+
+const showSoftSkillContent = () => {
+    softSkillContent.style.display = '';
+    softSkillHide.style.display = '';
+    softSkillShow.style.display = 'none';
+};
+
+softSkillShow.onclick = showSoftSkillContent;
+
