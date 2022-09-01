@@ -15,24 +15,6 @@ body {
   background-color: #fff;
 }
 
-
-/* ========= left side of the resume ========= */
-
-.left-side {
-  width: 370px;
-  background-color: #26284b;
-  color: #fff;
-}
-
-.photo {
-  width: 370px;
-}
-
-/* deactivated link in html head */
-/* .photo:hover {
-  animation: bounce 1s;
-} */
-
 /* ----------hiding button----------- */
 
 .header-container, 
@@ -58,6 +40,28 @@ body {
 .hiding-button i {
   margin: auto;
 }
+
+.education .hiding-button,
+.jobs .hiding-button {
+  border-color: #26284b;
+}
+
+/* ========= left side of the resume ========= */
+
+.left-side {
+  width: 370px;
+  background-color: #26284b;
+  color: #fff;
+}
+
+.photo {
+  width: 370px;
+}
+
+/* deactivated link in html head */
+/* .photo:hover {
+  animation: bounce 1s;
+} */
 
 
 .photo,
