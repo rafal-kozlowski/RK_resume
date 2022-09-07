@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://kit.fontawesome.com/284f175159.js" crossorigin="anonymous"></script>
@@ -110,7 +110,7 @@
             
             <p class="skills-name">Kanban</p>
             <div class="skills-container">
-              <div class="skill kanban"><p>80%</p></div>
+              <div class="skill kanban"><p>70%</p></div>
             </div>
             
             <p class="skills-name">Attention to details</p>
@@ -162,10 +162,11 @@
 
           <ul class="interests-list" id="interest-content">
             <li>Martial Arts - 1 Dan Traditional Karate grade </li>
-            <li>Rock music</li>
             <li>Healthy lifestyle and personal growth</li>
           </ul>
         </section>
+
+        <!-- download widget -->
         <section class="widget">
             <a class="widget-link" href="./assets/Rafal_Kozlowski_Resume.pdf" download>Download Resume</a>
         </section>
@@ -187,7 +188,7 @@
         <!-- education and courses -->
         <section class="education">
           <div class="header-container">
-            <h2 class="education-title">Education and courses</h2>
+            <h2 class="education-title">Education & courses</h2>
             <div>
                 <button class="hiding-button" id="education-show">
                   <i class='fas fa-caret-down' style='font-size:12px;color:#26284b'></i>
@@ -295,14 +296,14 @@
           </div>
         </section>   
 
-        <h5>If you would like to contact me, feel free to use the form below</h5>
-        <form action="https://formsubmit.co/6afb772e7cb2f928c6db01314aafe4ca" method="POST">
-          <input type="email" name="email" placeholder="Email Address" required>
-          <br>
-          <br>
-          <textarea name="text" placeholder="Please write your message here" cols="50" rows="10" required maxlength="200" style="font-family: Roboto;"></textarea>
-          <button type="submit">Send</button>
-        </form> 
+        <section class="form-container">
+          <h4>If you would like to contact me, feel free to use the form below</h4>
+          <form action="https://formsubmit.co/6afb772e7cb2f928c6db01314aafe4ca" method="POST" class="contact-form">
+            <input type="email" name="email" placeholder="Email Address" required class="form-email-area">
+            <textarea name="text" placeholder="Please write your message here" cols="50" rows="10" required maxlength="200" class="form-textarea"></textarea>
+            <button type="submit" class="send-button">Send</button>
+          </form>
+        </section>
 
       </div>
     </div>

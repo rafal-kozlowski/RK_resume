@@ -1,15 +1,16 @@
 * {
-  box-sizing:border-box
+  box-sizing: border-box;
 }
 
 body {
   background-color: #f5f7fa;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 .container {
   display: flex;
-  width: 1200px;
+  width: 1240px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -29,7 +30,9 @@ body {
 }
 
 .hiding-button {
-  position: absolute;
+  /* position: absolute; */
+  margin-top: 20px;
+  margin-bottom: 0;
   height: 15px;
   background-color: transparent;
   border-color: white;
@@ -49,20 +52,14 @@ body {
 /* ========= left side of the resume ========= */
 
 .left-side {
-  width: 370px;
+  width: 410px;
   background-color: #26284b;
   color: #fff;
 }
 
 .photo {
-  width: 370px;
+  width: 410px;
 }
-
-/* deactivated link in html head */
-/* .photo:hover {
-  animation: bounce 1s;
-} */
-
 
 .photo,
 .contacts,
@@ -78,8 +75,16 @@ body {
 }
 
 .contacts-title,
+.skills-title,
+.activities-title,
+.interests-title {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.contacts-title,
 .skills-title {
-  color: #ffffff;
+  color: #fff;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
@@ -119,11 +124,6 @@ body {
   color: white; 
 }
 
-.skills-title {
-  font-size: 22px;
-  line-height: 1.091;
-}
-
 .skills-name{
   margin-top: 12px;
   margin-bottom: 4px;
@@ -151,7 +151,7 @@ body {
 .skill.git {width: 40%; background-color: #2196F3;} 
 .skill.eng {width: 70%; background-color: #2196F3;}
 .skill.scrum {width: 50%; background-color: #2196F3;}
-.skill.kanban {width: 80%; background-color: #2196F3;}
+.skill.kanban {width: 70%; background-color: #2196F3;}
 .skill.attention {width: 80%; background-color: #2196F3;}
 .skill.communication {width: 80%; background-color: #2196F3;}
 
@@ -218,21 +218,19 @@ body {
 .bio,
 .jobs,
 .education {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .bio-title {
   padding: 0;
   font-size: 45px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  color: #26284b;
 }
 
 .bio-occupation {
+  margin-top: 0;
   margin-bottom: 27px;
-}
-
-.bio-title {
-  color: #26284b;
 }
 
 .bio-occupation,
@@ -245,6 +243,8 @@ body {
 
 .jobs-title,
 .education-title {
+  margin-top: 20px;
+  margin-bottom: 0;
   color: #26284b;
   font-size: 22px;
   line-height: 1.091;
@@ -275,3 +275,62 @@ body {
   color: #2196F3;
 }
 
+.form-container {
+  background-color: #26284b;
+  border-radius: 7px;
+}
+
+.form-container h4 {
+  margin: 5px auto;
+  padding-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form-email-area,
+.form-textarea,
+.send-button {
+  padding: 5px;
+  border: 3px solid #2196F3;
+  border-radius: 5px;
+}
+
+.form-textarea {
+  font-family: 'Roboto', sans-serif;
+  margin: 10px 0;
+}
+
+.send-button {
+  margin: 0 auto;
+  width: 20%;
+  background-color: #2196F3;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 4px #4ea5ec;
+}
+
+.send-button:hover {
+  cursor: pointer;
+}
+
+.send-button:active {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+/* ============== hiding elements to print pdf file ============== */
+
+/* .header-container div,
+.widget,
+.contact-form {
+  display: none;
+} */
