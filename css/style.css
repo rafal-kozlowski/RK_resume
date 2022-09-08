@@ -328,9 +328,9 @@ body {
 }
 
 /* ============== hiding elements to print pdf file ============== */
-
+/* 
 .header-container div,
 .widget,
 .form-container {
   display: none;
-}
+} */
