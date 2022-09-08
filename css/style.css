@@ -329,8 +329,8 @@ body {
 
 /* ============== hiding elements to print pdf file ============== */
 
-/* .header-container div,
+.header-container div,
 .widget,
-.contact-form {
+.form-container {
   display: none;
-} */
+}
